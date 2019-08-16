@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mobile</title>
+
+</head>
+<body>
+<div id="nokiamobi">
+    <div>
+        <textarea style="resize:none;" id="screenNokia" cols="50" rows="10"  placeholder="Hello meow meow" readonly >
+        </textarea>
+        <span><b>Nokia</b></span>
+    </div>
+    <div id="nokia">
+        <button id="powerBtnNokia" onclick="onOff(nokia)">OFF</button>
+        <button onclick="checkStatus(nokia)">kiểm tra trạng thái</button>
+        <button onclick="writeMessage(nokia)">Soạn tin nhắn</button>
+        <button onclick="sendMessage(nokia)">Gửi</button>
+        <button onclick="back(nokia)">Trở về</button><br><br>
+        <button onclick="checkInBox(nokia)">Hộp thư đến</button>
+        <button onclick="checkOutBox(nokia)">Hộp thư đi</button>
+    </div>
+</div>
+<hr>
+<div id="iphone">
+    <div>
+        <textarea style="resize:none;" id="screenIphone" cols="50" rows="10" placeholder="Hello kitty" readonly height="100px"></textarea>
+        <span><b>Iphone</b></span>
+    </div>
+    <div id="iphonemobi">
+        <button id="powerBtnIphone" onclick="onOff(iphone)">OFF</button>
+        <button onclick="checkStatus(iphone)">kiểm tra trạng thái</button>
+        <button onclick="writeMessage(iphone)">Soạn tin nhắn</button>
+        <button onclick="sendMessage(iphone)">Gửi</button>
+        <button onclick="back(iphone)">Trở về</button><br><br>
+        <button onclick="checkInBox(iphone)">Hộp thư đến</button>
+        <button onclick="checkOutBox(iphone)">Hộp thư đi</button>
+    </div>
+</div>
+<script src="Mobile.js"></script>
+</body>
+</html>
